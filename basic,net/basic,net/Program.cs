@@ -1,18 +1,11 @@
 ﻿using System;
-class employee
+class emp
 {
     static void Main()
     {
-        Random random = new Random();
-        int attendance = random.Next(0, 2);
-
-        if (attendance == 0)
-        {
-            Console.WriteLine("employee is absent");
-        }
-        else
-        {
-            Console.WriteLine("employee is present");
-        }
+        int wagePerHoure = 20;
+        int FullDayHoure = 8;
+        int DailyWage = wagePerHoure * FullDayHoure;
+        Console.WriteLine("Daily employee wage :-" + DailyWage);
     }
 }
